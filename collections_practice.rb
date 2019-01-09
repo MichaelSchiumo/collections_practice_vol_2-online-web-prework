@@ -44,7 +44,7 @@ clients = {
   "blue"=>{"client_id"=>"2181"}
 }
 
-
+clients.select{|key, hash| hash["client_id"] == "2180" }
 
 
 

@@ -37,6 +37,18 @@ def find_cool(cool)
 end  
 
 
+clients = {
+  "yellow"=>{"client_id"=>"2178"}, 
+  "orange"=>{"client_id"=>"2180"}, 
+  "red"=>{"client_id"=>"2179"}, 
+  "blue"=>{"client_id"=>"2181"}
+}
+
+
+
+
+
+
 
 
 

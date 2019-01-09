@@ -25,16 +25,24 @@ def count_elements(array)
   array.each_with_object(Hash.new(0)) { |g,h| h[g[:name]] += 1}.map { |name, count| { :name=>name, :count=>count }}
 end
 
-def merge_data(keys, data) 
-keys.merge(data) {|key, keys_item, b_item| merge_recursively(keys_item, data_item) }
-end   
+def merge_data(v1,v2)
+  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+end
+
+
 
 def find_cool(cool)
- 
+ cool.select {|cool, hash| hash["temperature"] == "cool"}
   
 end  
 
-def organize_schools
+
+
+
+
+
+
+def organize_schools(schools)
 
 end  
 
